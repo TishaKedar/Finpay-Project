@@ -31,11 +31,12 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-4 ml-auto">
-          <button className="px-6 py-2 text-finpayBlack font-medium text-base border border-black rounded-md hover:bg-black hover:text-white transition-colors">
-            Login
-          </button>
+        <button className="px-6 py-2 text-finpayBlack font-medium text-base border border-black rounded-2xl hover:bg-black hover:text-white transition-colors">
+  Login
+</button>
 
-          <button className="bg-finpayPrimary text-white font-medium px-6 py-2 rounded-md hover:bg-opacity-90 transition-colors text-base">
+
+          <button className="bg-finpayPrimary text-white font-medium px-6 py-2 rounded-2xl hover:bg-opacity-90 transition-colors text-base">
             Sign Up
           </button>
         </div>

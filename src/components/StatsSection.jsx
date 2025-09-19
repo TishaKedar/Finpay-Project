@@ -16,11 +16,14 @@ const StatsSection = () => {
         <div className="flex flex-col md:flex-row justify-center gap-6 mb-20">
 
           {/* Plus Plan */}
-          <div className="bg-white rounded-3xl p-12 sm:p-16 md:p-20 w-full sm:w-[28rem] md:w-[30rem] shadow-2xl border border-gray-100 flex flex-col text-left">
-            <h3 className="text-2xl sm:text-3xl font-bold text-finpayDark mb-6 sm:mb-8">Plus</h3>
+          <div className="bg-[#e9f3f4] rounded-3xl w-full sm:w-[28rem] md:w-[30rem] border border-gray-100 flex flex-col h-64 relative">
+            {/* Title at top-left */}
+            <h3 className="text-2xl sm:text-3xl font-bold text-finpayDark absolute top-6 left-6">
+              Plus
+            </h3>
 
-            {/* Price and arrow */}
-            <div className="mt-auto flex justify-between items-center">
+            {/* Price and arrow at bottom-left */}
+            <div className="absolute bottom-6 left-6 flex items-center gap-4">
               <div className="text-finpayDark text-2xl sm:text-3xl font-bold">
                 £2.99 <span className="text-gray-600 text-base sm:text-xl font-normal">/month</span>
               </div>
@@ -33,23 +36,29 @@ const StatsSection = () => {
           </div>
 
           {/* Premium Plan */}
-          <div className="bg-gradient-to-br from-finpayPrimary to-teal-600 rounded-3xl p-12 sm:p-16 md:p-20 w-full sm:w-[28rem] md:w-[30rem] text-white relative overflow-hidden flex flex-col text-left shadow-2xl">
+          <div className="bg-gradient-to-br from-finpayPrimary to-teal-600 rounded-3xl w-full sm:w-[28rem] md:w-[30rem] flex flex-col h-64 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-3xl"></div>
-            <div className="relative z-10 flex flex-col h-full">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Premium</h3>
 
-              {/* Price and arrow */}
-              <div className="mt-auto flex justify-between items-center">
-                <div className="text-2xl sm:text-3xl font-bold">
-                  £6.99 <span className="text-white/80 text-base sm:text-xl font-normal">/month</span>
-                </div>
-                <img 
-                  src="/icons/arrow2.svg" 
-                  alt="Arrow Icon" 
-                  className="w-8 sm:w-10 h-8 sm:h-10 object-contain"
-                />
-              </div>
-            </div>
+            {/* Title at top-left */}
+            <h3 className="text-4xl sm:text-5xl font-bold text-white absolute top-6 left-10">
+              Premium
+            </h3>
+
+            {/* Price at bottom-left, Arrow at bottom-right */}
+<div className="absolute bottom-6 left-6 right-6 flex justify-between items-center">
+  {/* Price */}
+  <div className="text-2xl sm:text-3xl font-bold text-white left-10">
+    £6.99 <span className="text-white/80 text-base sm:text-xl font-normal">/month</span>
+  </div>
+
+  {/* Arrow */}
+  <img 
+    src="/icons/arrow2.svg" 
+    alt="Arrow Icon" 
+    className="w-8 sm:w-10 h-8 sm:h-10 object-contain"
+  />
+</div>
+
           </div>
 
         </div>
