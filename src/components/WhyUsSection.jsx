@@ -2,7 +2,8 @@ import React from "react";
 
 const WhyUsSection = () => {
   return (
-    <div className="bg-white py-20 px-4 sm:px-6 lg:px-16">
+    <div className="bg-white pt-6 sm:pt-8 lg:pt-10 pb-16 px-4 sm:px-6 lg:px-16">
+
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
@@ -19,19 +20,19 @@ const WhyUsSection = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-12 mb-12">
 
           {/* Card 1 */}
-          <div className="bg-[#f7fafa] rounded-2xl p-6 sm:p-8 shadow-lg w-full sm:w-[420px] h-64 sm:h-80 flex flex-col justify-between items-center sm:items-start text-center sm:text-left">
-            <div className="text-5xl sm:text-8xl font-bold text-finpayPrimary mb-2">
+          <div className="bg-[#f7fafa] rounded-2xl p-6 lg:p-8  w-full sm:w-[420px] h-[230px] md:h-[250px] lg:h-80 flex flex-col justify-between items-center sm:items-start text-center sm:text-left">
+            <div className="text-5xl sm:text-8xl font-bold text-finpayPrimary mb-2 text-left">
               3k+
             </div>
-            <p className="text-finpayDark text-base sm:text-lg font-medium">
+            <p className="text-finpayDark text-2xl md:text-lg font-medium">
               Businesses already running <br className="hidden sm:block" />
               on Finpay
             </p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#f7fafa] rounded-2xl p-6 sm:p-8 shadow-lg w-full sm:w-[420px] h-64 sm:h-80 flex flex-col justify-between items-center sm:items-start text-center sm:text-left">
-            <h3 className="text-lg sm:text-2xl font-bold text-finpayDark mb-4 sm:mb-6">
+          <div className="bg-[#f7fafa] rounded-2xl p-6 sm:p-8  w-full sm:w-[420px] h-[230px] md:h-[250px] lg:h-80 flex flex-col justify-between items-center sm:items-start text-center sm:text-left">
+            <h3 className="text-2xl font-bold text-finpayDark mb-4 sm:mb-6">
               Instant Withdraw your funds <br className="hidden sm:block" />
               at any time
             </h3>
@@ -70,15 +71,15 @@ const WhyUsSection = () => {
         </div>
 
         {/* Bottom Full-Width Card with Graph */}
-<div className="bg-[#f7fafa] rounded-2xl p-6 sm:p-8 shadow-lg w-full max-w-[880px] mx-auto">
-  <div className="flex flex-col md:flex-row gap-6 items-center">
+<div className="bg-[#f7fafa] rounded-2xl p-6 sm:p-8 flex  w-full max-w-[880px] mx-auto h-[500px] md:h-80">
+  <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
 
     {/* Left side: Text */}
     <div className="flex-1 text-center md:text-left">
-      <h3 className="text-lg sm:text-2xl font-bold text-finpayDark mb-2 sm:mb-4">
+      <h3 className="text-md sm:text-2xl font-bold text-finpayDark mb-2 sm:mb-4 text-2xl">
         No asset volatility
       </h3>
-      <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+      <p className="text-gray-600 leading-relaxed text-md sm:text-base text-2xl">
         Generate returns on your <br className="hidden sm:block" />
         cash reserves without making <br className="hidden sm:block" />
         any investments.
@@ -106,4 +107,6 @@ const WhyUsSection = () => {
 };
 
 export default WhyUsSection;
+
+
 

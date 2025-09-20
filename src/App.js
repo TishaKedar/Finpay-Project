@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-finpayLight">
       <Navbar />
       <Hero />
       <Features />
@@ -26,5 +26,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

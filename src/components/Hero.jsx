@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-finpayLight min-h-screen relative overflow-x-hidden">
+    <section className="bg-finpayLight relative overflow-x-hidden min-h-[80vh] lg:min-h-0">
       {/* Decorative Lines */}
       <div className="hidden sm:block absolute top-0 -right-52 h-full w-1/2 pointer-events-none">
         <div className="relative h-full">
@@ -16,14 +16,15 @@ const Hero = () => {
       </div>
 
       {/* Content Wrapper */}
-      <div className="px-6 sm:px-10 lg:px-20 pt-32 pb-[clamp(5rem,8vw,10rem)] relative">
+      <div className="px-6 sm:px-10 lg:px-20 pt-6 sm:pt-8 lg:pt-10 pb-[clamp(4rem,6vw,8rem)] relative">
+
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           
           {/* Left Content */}
           <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-finpayDark leading-relaxed">
-              <span className="font-bold block mb-6">Get paid early</span>
-              <span className="font-normal block mb-6">save automatically</span>
+              <span className="font-bold block lg:mb-6">Get paid early</span>
+              <span className="font-normal block lg:mb-6">save automatically</span>
               <span className="font-normal block">all your pay.</span>
             </h1>
 
