@@ -16,20 +16,25 @@ const MissionSection = () => {
           Hundreds of all sizes and across all industries have made big improvements with us.
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-24">
-          <div className="text-center">
-            <div className="text-3xl sm:text-5xl font-bold text-finpayDark mb-2">24%</div>
-            <div className="text-gray-600 text-sm">Revenue business</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl sm:text-5xl font-bold text-finpayDark mb-2">180K</div>
-            <div className="text-gray-600 text-sm">In annual revenue</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl sm:text-5xl font-bold text-finpayDark mb-2">10+</div>
-            <div className="text-gray-600 text-sm">Months of runway</div>
-          </div>
-        </div>
+        <div className="flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-24 max-w-5xl mx-auto">
+  <div className="text-center flex-shrink-0">
+    <div className="text-4xl md:text-5xl lg:text-7xl font-bold text-finpayDark mb-2">24%</div>
+    <div className="text-gray-600 text-sm md:text-base">Revenue business</div>
+  </div>
+
+  <div className="text-center flex-shrink-0">
+    <div className="text-4xl md:text-5xl lg:text-7xl font-bold text-finpayDark mb-2">180K</div>
+    <div className="text-gray-600 text-sm md:text-base">In annual revenue</div>
+  </div>
+
+  <div className="text-center flex-shrink-0">
+    <div className="text-4xl md:text-5xl lg:text-7xl font-bold text-finpayDark mb-2">10+</div>
+    <div className="text-gray-600 text-sm md:text-base">Months of runway</div>
+  </div>
+</div>
+
+
+
       </div>
     </div>
   );
